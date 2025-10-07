@@ -1,0 +1,19 @@
+{
+  "type": "module",
+  "main": "dist/index.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "grammy": "^1.6.0",
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {
+    "tsup": "^5.0.0"
+  },
+  "name": "telegram-bot",
+  "version": "0.1.0"
+}
