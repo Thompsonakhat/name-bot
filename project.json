@@ -62,6 +62,14 @@
     {
       "role": "assistant",
       "content": "Updated index.js to use the bot instance from bot.js with grammy instead of telegraf."
+    },
+    {
+      "role": "user",
+      "content": "add a build command \"npm install\" to package.json file"
+    },
+    {
+      "role": "assistant",
+      "content": "Added a build command 'npm install' to the package.json file."
     }
   ],
   "description": "",
