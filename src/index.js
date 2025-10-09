@@ -1,10 +1,15 @@
-import 'dotenv/config';
-import { createBot } from './bot.js';
+// Importing necessary modules
+const { startCommand } = require('./commands/start');
+const { nameCommand } = require('./commands/name');
+const { helpCommand } = require('./commands/help');
+const { usernameCommand } = require('./commands/username');
 
-const token = process.env.BOT_TOKEN;
-if (!token) {
-  throw new Error('BOT_TOKEN is not defined in .env');
-}
+// Bot initialization and command wiring
+const bot = new Telegraf(process.env.BOT_TOKEN);
 
-const bot = createBot(token);
-bot.start();
+bot.start(startCommand);
+bot.command('name', nameCommand);
+bot.command('help', helpCommand);
+bot.command('username', usernameCommand);
+
+bot.launch();
