@@ -15,6 +15,11 @@
       "command": "/start",
       "description": "Handler for /start",
       "example": "User: /start → bot replies."
+    },
+    {
+      "command": "/username",
+      "description": "Handler for /username",
+      "example": "User: /username → bot replies."
     }
   ],
   "aiMessages": [
@@ -33,6 +38,14 @@
     {
       "role": "assistant",
       "content": "Added a new command to return the user's username and wired it in the bot entry file."
+    },
+    {
+      "role": "user",
+      "content": "you forgot to initialize the bot in index.js"
+    },
+    {
+      "role": "assistant",
+      "content": "Initialized the bot in index.js and wired the existing commands."
     }
   ],
   "description": "",
