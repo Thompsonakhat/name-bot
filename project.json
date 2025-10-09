@@ -46,6 +46,14 @@
     {
       "role": "assistant",
       "content": "Initialized the bot in index.js and wired the existing commands."
+    },
+    {
+      "role": "user",
+      "content": "no need to declare a bot instance from telegraf we already have a bot.js file that uses grammy"
+    },
+    {
+      "role": "assistant",
+      "content": "Updated index.js to use the bot instance from bot.js with grammy instead of telegraf."
     }
   ],
   "description": "",
