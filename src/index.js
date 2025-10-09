@@ -1,15 +1,13 @@
-// Importing necessary modules
 const { startCommand } = require('./commands/start');
-const { nameCommand } = require('./commands/name');
 const { helpCommand } = require('./commands/help');
+const { nameCommand } = require('./commands/name');
 const { usernameCommand } = require('./commands/username');
 
-// Bot initialization and command wiring
-const bot = new Telegraf(process.env.BOT_TOKEN);
+const commands = {
+  start: startCommand,
+  help: helpCommand,
+  name: nameCommand,
+  username: usernameCommand
+};
 
-bot.start(startCommand);
-bot.command('name', nameCommand);
-bot.command('help', helpCommand);
-bot.command('username', usernameCommand);
-
-bot.launch();
+module.exports = commands;

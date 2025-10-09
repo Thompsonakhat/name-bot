@@ -3,18 +3,18 @@
   "commands": [
     {
       "command": "/help",
-      "description": "Show help",
-      "example": "User: /help → Available commands: /start, /help, /name"
+      "description": "Handler for /help",
+      "example": "User: /help → bot replies."
     },
     {
       "command": "/name",
-      "description": "Reply with your name",
-      "example": "User: /name → Your name is: User"
+      "description": "Handler for /name",
+      "example": "User: /name → bot replies."
     },
     {
       "command": "/start",
-      "description": "Show welcome message",
-      "example": "User: /start → Welcome to the bot! Use /help to see available commands."
+      "description": "Handler for /start",
+      "example": "User: /start → bot replies."
     }
   ],
   "aiMessages": [
@@ -25,9 +25,17 @@
     {
       "role": "assistant",
       "content": "Project created from your prompt. Ask for features and I'll modify files."
+    },
+    {
+      "role": "user",
+      "content": "Can we add a fourth command which returns the user`s username"
+    },
+    {
+      "role": "assistant",
+      "content": "Added a new command to return the user's username and wired it in the bot entry file."
     }
   ],
-  "createdBy": "68b110d9dff419d003721860",
-  "source": "openai-structured",
-  "description": "A simple Telegram bot that replies with the user's name when the /name command is used, along with basic commands like /start and /help."
+  "description": "",
+  "source": "",
+  "createdBy": ""
 }
